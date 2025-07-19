@@ -18,11 +18,13 @@ dbconnect.connect();
 const userRoutes = require("./Routes/user");
 app.use("/api/v1", userRoutes);
 
-// start the server
+app.get("/", (req, res) => {
+    res.send("Welcome to AuthApp backend!");
+});
+
+// start the server at last
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
-app.get("/", (req, res) => {
-    res.send("Welcome to AuthApp backend!");
-});
+
