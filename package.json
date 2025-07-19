@@ -1,15 +1,14 @@
 {
   "name": "authapp",
   "version": "1.0.0",
+  "description": "A simple authentication app using Node.js and MongoDB",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Saikat Das",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
