@@ -29,7 +29,7 @@ exports.signup = async(req,res)=>{
         }
         catch(err){
             return res.status(500).json({
-                success:failed,
+                success:false,
                 message:"Error in hashing password "
             })
         }
